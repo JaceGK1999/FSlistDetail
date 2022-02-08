@@ -13,7 +13,7 @@ export function renderListItem(food) {
     nameSpan.classList.add('name');
 
     const span = document.createElement('span');
-    span.textContent = food.type;
+    span.textContent = food.color;
 
     a.append(img, nameSpan, span);
     div.append(a);
