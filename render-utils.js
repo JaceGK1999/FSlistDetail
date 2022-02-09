@@ -3,7 +3,7 @@ export function renderListItem(food) {
     div.classList.add('food');
 
     const a = document.createElement('a');
-    a.href = `./animals/?id=${food.id}`;
+    a.href = `./food/?id=${food.id}`;
 
     const img = document.createElement('img');
     img.src = `./assets/${food.name}.svg`;
