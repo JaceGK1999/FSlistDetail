@@ -6,7 +6,7 @@ export function renderListItem(food) {
     a.href = `./animals/?id=${food.id}`;
 
     const img = document.createElement('img');
-    img.src = `./assets/${food.type}.svg`;
+    img.src = `./assets/${food.name}.svg`;
 
     const nameSpan = document.createElement('span');
     nameSpan.textContent = food.name;
@@ -15,7 +15,10 @@ export function renderListItem(food) {
     const span = document.createElement('span');
     span.textContent = food.color;
 
-    a.append(img, nameSpan, span);
+    const spanType = document.createElement('span');
+    span.textContent = food.type;
+
+    a.append(img, nameSpan, span, spanType);
     div.append(a);
     return div;
 }
