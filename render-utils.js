@@ -6,7 +6,7 @@ export function renderListItem(food) {
     a.href = `./food/?id=${food.id}`;
 
     const img = document.createElement('img');
-    img.src = `./assets/${food.name}.svg`;
+    img.src = `./assets/${food.name}.png`;
 
     const nameSpan = document.createElement('span');
     nameSpan.textContent = food.name;
